@@ -36,11 +36,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Footer -->
-        <app-footer
-            component-style="text-slate-400 hover:text-slate-200 transition-colors duration-200 font-medium underline"
-            class="fixed bottom-0 left-0 m-3" text="&copy; by Solytics GmbH" url="https://www.solytics.de/#/" />
     </div>
 </template>
 <script setup>
