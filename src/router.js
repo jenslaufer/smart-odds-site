@@ -5,7 +5,15 @@ export const router = createRouter({
     routes: [
         {
             path: '',
-            component: () => import('./pages/Home.vue')
+            component: () => import('./pages/Home.vue'),
+            props: {
+                badge: 'SmartOdds.app • Browser extension for value bettors',
+                headline: 'Spot profitable odds instantly—right while you browse',
+                subHeadline: 'SmartOdds.app overlays better bookmaker odds directly on the site you’re using—so you never miss a higher payout again.',
+                cta: 'Add SmartOdds to Chrome',
+                ctaFooter: 'No signup. Setup in under 2 minutes.',
+                productName: 'SmartOdds'
+            }
         }
     ]
 })
