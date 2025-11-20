@@ -17,7 +17,7 @@
             </h2>
 
             <p class="text-sm sm:text-base lg:text-lg text-slate-300 mb-8 leading-relaxed">
-                {{ subHeadline }}
+                {{ uvp }}
             </p>
 
             <div class="flex flex-col items-center justify-center gap-3">
@@ -50,7 +50,7 @@ const props = defineProps({
         type: String,
         required: true
     },
-    subHeadline: {
+    uvp: {
         type: String,
         required: true
     },
