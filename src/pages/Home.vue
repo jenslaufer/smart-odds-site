@@ -21,7 +21,7 @@
             </p>
 
             <div class="flex flex-col items-center justify-center gap-3">
-                <a href="#" class="inline-flex items-center justify-center rounded-full px-6 py-2.5 text-sm font-semibold
+                <a href="#" class="inline-flex items-center justify-center rounded-full px-6 py-3 text-lg font-semibold
                  bg-emerald-500 hover:bg-emerald-400 text-black shadow-lg shadow-emerald-500/30
                  transition-transform duration-150 hover:-translate-y-0.5">
                     {{ cta }}
@@ -34,6 +34,8 @@
     </div>
 </template>
 <script setup>
+import { useHead } from '@unhead/vue'
+
 const props = defineProps({
     badge: {
         type: String,
@@ -61,5 +63,10 @@ const props = defineProps({
         type: String,
         required: true
     }
+})
+
+
+useHead({
+    title: `${props.productName}–${props.headline}`,
 })
 </script>
